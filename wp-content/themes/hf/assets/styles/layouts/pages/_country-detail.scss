@@ -1,0 +1,141 @@
+.single-hf_countries {
+
+	.page-wrapper {
+
+		.hero-container {
+
+			.hero-img-wrapper {
+				margin-bottom: 10px;
+				overflow: hidden;
+				padding: 2px;
+				border: 1px solid $color-gray;
+				visibility: hidden;
+
+				&.slick-initialized {
+					visibility: visible;
+				}
+
+				img {
+
+					&.hero-img {
+						width: 100%;
+						object-fit: cover;
+						object-position: center;
+						height: 300px;
+					}
+				}
+			}
+		}
+
+		.img-wrapper {
+			display: flex;
+			margin-bottom: 10px;
+
+			.director-img-wrapper {
+				width: 206px;
+				height: 206px;
+				border-radius: 50%;
+				overflow: hidden;
+				display: flex;
+				border: 1px solid #ccc;
+				align-items: center;
+				justify-content: center;
+
+				img {
+					object-fit: cover;
+					object-position: center;
+					width: 200px;
+					height: 200px;
+					border-radius: 50%;
+				}
+			}
+		}
+
+
+
+		.ow-projects-inside-program-slider {
+			.slick-track {
+				margin-left: 0;
+				.owp-block {
+					width: 100%;
+					margin-right: 20px;
+					padding: 0 10px;
+
+					.owp-block-inner{
+						border: 1px solid #eeeeee;
+						overflow: hidden;
+						width: 100%;
+						min-height: 413px;
+
+						.owp-block-image{
+							img {
+								height: 200px;
+								object-fit: cover;
+								width: 100%;
+							}
+						}
+						.owp-block-title {
+							h4 {
+								font-size: 20px;
+								text-align: center;
+								padding: 20px 10px 10px 10px;
+								position: relative;
+								color: #066db6;
+								&::after{
+									background:#d2d2d2;
+									height: 2px;
+									width:65px;
+									content:"";
+									position:absolute;
+									margin: 0 auto;
+									left: 0;
+									right: 0;
+									bottom:-4px;
+								}
+							}
+						}
+						.owp-block-desc{
+
+							color:#696969;
+							font-size: 11px;
+							text-align: center;
+							padding: 0px 20px 20px;
+
+							p {
+								text-align: justify;
+							}
+
+						}
+					}
+				}
+
+				.team-arrow {
+					position: absolute;
+					top: 50%;
+					display: inline-block;
+					background: rgba($color-primary, .5);
+					height: 50px;
+					width: 50px;
+					text-align: center;
+					cursor: pointer;
+					line-height: 50px;
+					font-size: 24px;
+					color: #FFF;
+					border: 2px solid $color-primary;
+					margin-top: -25px;
+					z-index: 50;
+
+					&.team-prev-arrow {
+						left: -30px !important;
+					}
+
+					&.team-next-arrow {
+						right: -30px !important;
+					}
+				}
+
+			}
+		}
+
+	}
+}

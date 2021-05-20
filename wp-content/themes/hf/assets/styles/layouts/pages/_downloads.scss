@@ -1,0 +1,75 @@
+.downloads-page{
+	background-image: url('../../assets/images/resources-cover-img.jpg');
+}
+.downloads-main-container {
+	float: left;
+	width: 100%;
+	table thead tr th:last-child{
+		text-align: center;
+	}
+	table thead tr th:first-child{
+		text-align: center;
+	}
+	table tbody tr th:first-child{
+		text-align: center;
+	}
+
+	a{
+		color: gray;
+		padding: 5px 10px;
+		&:hover{
+			background:#eeeeee;
+		}
+	}
+}
+
+.blog-content {
+	.hf-grid-layout {
+		.hf-gl-item {
+			.hf-gl-item-heading {
+				padding: 10px 15px;
+				width: 100%;
+				display: table;
+				height: 50px;
+				span{
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+			.default-img {
+				min-width: 100%;
+				min-height: 200px;
+				background: #ccc;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				i {
+					font-size: 84px;
+					color: #666;
+				}
+			}
+
+			.download-icon {
+				color: #ffffff;
+				padding: 7px 15px;
+
+				i {
+					font-size: 20px;
+				}
+			}
+
+			.file-type {
+				padding: 10px 15px;
+				position: relative;
+				font-size: 12px;
+				color: #ffffff;
+			}
+			.hf-downloads-meta {
+				background-color: $color-primary;
+				overflow: hidden;
+				width: 100%;
+			}
+		}
+	}
+}

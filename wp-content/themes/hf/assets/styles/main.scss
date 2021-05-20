@@ -1,0 +1,59 @@
+@import "common/variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/grid";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "layouts/inner-header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+
+@import "layouts/inner-page-common";
+@import "layouts/pages/frontpage";
+@import "layouts/pages/events";
+@import "layouts/pages/our-work";
+@import "layouts/pages/about-us";
+@import "layouts/pages/current-happenings";
+@import "layouts/pages/blog";
+@import "layouts/pages/event-detail";
+@import "layouts/pages/our-impact";
+@import "layouts/pages/project-detail";
+@import "layouts/pages/program-detail";
+@import "layouts/pages/telethon";
+@import "layouts/pages/resources";
+@import "layouts/pages/downloads";
+@import "layouts/pages/team";
+@import "layouts/pages/stories";
+@import "layouts/pages/stripe";
+@import "layouts/pages/login";
+@import "layouts/pages/get-involved";
+@import "layouts/pages/programs";
+@import "layouts/pages/projects";
+@import "layouts/pages/partners";
+@import "layouts/pages/sponsors";
+@import "layouts/pages/sponsors-detail";
+@import "layouts/pages/partners-detail";
+@import "layouts/pages/global-sites-detail";
+@import "layouts/pages/global-sites";
+@import "layouts/pages/geographical-regions";
+@import "layouts/pages/country-detail";
+@import "layouts/pages/event-booking-process";
+@import "layouts/pages/videos";
+@import "layouts/pages/campaign";
+
+@import "layouts/pages/std-pages";
+@import "../../bower_components/slick-carousel/slick/slick-theme.scss";
+@import "layouts/responsive";

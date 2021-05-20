@@ -1,0 +1,32 @@
+@mixin social-login-btn {
+  color: $color-white;
+  cursor: pointer;
+}
+
+.btn-login-fb {
+  @include social-login-btn;
+  background: #5070A9;
+}
+
+.btn-login-google {
+  @include social-login-btn;
+  background: #CF4332;
+}
+
+.btn-login-fb,
+.btn-login-google {
+
+  &:hover {
+    color: $color-white;
+  }
+
+  & > i {
+    font-size: 26px;
+    margin-right: 10px;
+  }
+
+  .btn-text {
+    vertical-align: top;
+    margin-top: 3px;
+  }
+}

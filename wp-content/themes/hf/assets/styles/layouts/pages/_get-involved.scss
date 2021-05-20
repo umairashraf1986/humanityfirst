@@ -1,0 +1,169 @@
+.get-involved-page {
+	background: #fff;
+	padding: 90px 0 100px;
+	.our-work-cont-title{
+		text-transform: uppercase;
+		text-align: left;
+		margin-bottom: 20px;
+		font-size: 36px;
+		font-weight: normal;
+		color: $color-primary;
+		font-family: $font-heading;
+	}
+
+
+	.our-work-cat-title {
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 40px;
+		font-weight: bold;
+	}
+	.project-image-container {
+		width: 100%;
+		float: left;
+		img{
+			width: 100%;
+		}
+	}
+	.gi-blocks{
+		.gi-block{
+			position: relative;
+			left: 0;
+			right: 0;
+			bottom: 10px;
+			ul{
+				padding: 0;
+				float: none;
+				width: auto;
+				display: table;
+				margin: 50px auto;
+				padding: 0;
+				li.active{
+					.hn-be-a-volunteer{
+						background: url("../../assets/images/volunteer-nav-h.png") no-repeat scroll center 43% transparent;
+					}
+					.hn-donate{
+						background: url("../../assets/images/donate-nav-h.png") no-repeat scroll center 43% transparent;
+					}
+					.hn-be-a-sponser{
+						background: url("../../assets/images/sponser-nav-h.png") no-repeat scroll center 43% transparent;
+					}
+					a{
+						span {
+							color:$color-primary;
+							border-bottom: 2px solid $color-primary;
+						}
+					}
+				}
+				li{
+					list-style: none;
+					float: left;
+					padding: 10px 15px;
+					position: relative;
+
+					a{
+						text-align: center;
+						text-decoration: none;
+						width: 235px;
+						height: 230px;
+						margin: 0;
+						float: left;
+						display: block;
+						position: relative;
+						border: 1px solid #eeeeee;
+						overflow: hidden;
+						
+						&:hover{
+							
+							.proj-details{
+							opacity: 1;
+							visibility: visible;
+						}
+						}
+						span {
+							padding: 0px 0 10px;
+							text-transform: uppercase;
+							font-weight: 400;
+							color: #a7a7a7;
+							display: table;
+							margin: 0 auto;
+							position: absolute;
+							bottom: 20%;
+							text-align: center;
+							width: 100%;
+						}
+						.proj-details{
+							transition: all ease .2s;
+							opacity: 0;
+							visibility: hidden;
+							background:#fff;
+							position: absolute;
+							height: 100%;
+							width: 100%;
+							top: 0;
+							bottom: 0;
+							left: 0;
+							right: 0;
+							padding: 10px 25px;
+							.pjd-inner{
+								position: absolute;
+								height: 150px;
+								width: 100%;
+								top: 50%;
+								bottom: 0;
+								transform:translateY(-50%);
+								left: 0;
+								right: 0;
+								h1{
+									font-size: 18px;
+									text-align: center;
+									padding: 20px 10px 10px;
+									position: relative;
+									color: #066db6;
+									&::after{
+										background: #d2d2d2;
+										height: 2px;
+										width: 65px;
+										content: "";
+										position: absolute;
+										margin: 0 auto;
+										left: 0;
+										right: 0;
+										bottom: -4px;
+									}
+								}
+								p{
+									margin: 0;
+									text-align: center;
+									font-size: 14px;
+								}
+								span.plus-link{
+									height: auto;
+									width: auto;
+									border: none;
+									padding: 10px;
+									margin: 0 auto;
+									float: none;
+									left: 0;
+									right: 0;
+									bottom: -10px;
+									display: block;
+									color: $color-primary;
+								}
+							}
+						}
+					}
+					.hn-be-a-volunteer{
+						background: url("../../assets/images/volunteer-nav.png") no-repeat scroll center 43% transparent;
+					}
+					.hn-donate{
+						background: url("../../assets/images/donate-nav.png") no-repeat scroll center 43% transparent;
+					}
+					.hn-be-a-sponser{
+						background: url("../../assets/images/sponser-nav.png") no-repeat scroll center 43% transparent;
+					}
+				}
+			}
+		}
+	}
+}	

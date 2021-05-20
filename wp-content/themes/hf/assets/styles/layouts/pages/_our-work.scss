@@ -1,0 +1,200 @@
+
+/* Our Work Programs Section */
+.our-work-page{
+	background-image: url('../../assets/images/our-work-cover-img.jpg');
+}
+
+.our-work-programs {
+	float: left;
+	width: 100%;
+	.our-work-cont-title{
+		text-transform: uppercase;
+		text-align: left;
+		margin-bottom: 20px;
+		font-size: 36px;
+		font-weight: normal;
+		color: $color-primary;
+		font-family: $font-heading;
+		font-weight: 800;
+	}
+
+	.our-work-cat-title {
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 40px;
+		font-weight: bold;
+	}
+	.content-grid{
+		padding: 0 15px 60px;
+		.content-wrapper {
+			width: 100%;
+			.ow-links{
+				text-decoration: none;
+				cursor: pointer;
+				float: left;
+				width: 100%;
+				&:hover{
+					opacity: .9;
+				}
+			}
+
+		}
+		.center-aligned{
+			margin: 0 auto;
+		}
+
+		.ow-program-content {
+			width: 100%;
+			float: left;
+		}
+		.ow-prog-title{
+			padding: 14px 0 0 0;
+			font-weight: bold;
+			text-transform: capitalize;
+		}
+		.text-paragraph{
+			margin-bottom: 20px;
+		}
+		.button-blue{
+			background: $color-primary;
+			color: white;
+			padding: 6px 15px 7px 15px;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: bold;
+			margin: 0;
+		}
+		.ow-prog-images{
+			position: relative;
+			width: 100%;
+			height: 240px;
+			> img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.owp-icon-container{
+				background:rgba(0, 0, 0 , 0.65);
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom:0;
+				width: 100%;
+				height: 100%;
+				.owp-icon{
+					width: auto;
+					height: auto;
+					position:absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					display: table;
+					margin: 0 auto;
+					left:0;
+					right:0;
+				}
+			}
+		}
+	}	
+}
+
+.our-work-projects {
+	background: #fff;
+	.our-work-cont-title{
+		text-transform: uppercase;
+		text-align: left;
+		margin-bottom: 20px;
+		font-size: 36px;
+		font-weight: normal;
+		color: $color-primary;
+		font-family: $font-heading;
+	}
+
+
+	.our-work-cat-title {
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 40px;
+		font-weight: bold;
+	}
+	.project-image-container {
+		width: 100%;
+		float: left;
+		img{
+			width: 100%;
+		}
+	}
+
+	.stats-progress-bar{
+		z-index: 1;
+		position:relative;
+		.cssProgress {
+			width: 100%;
+			margin-bottom: 20px;
+
+			.progress1 {
+				position: relative;
+				overflow: visible;
+				width: 100%;
+				font-family: "Roboto", sans-serif;
+			}
+
+			.cssProgress-bar {
+				display: block;
+				float: left;
+				width: 0%;
+				height: 100%;
+				background: rgb(6,109,183); /* Old browsers */
+				background: -moz-linear-gradient(left,  rgba(6,109,183,1) 0%, rgba(3,184,228,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(6,109,183,1) 0%,rgba(3,184,228,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(6,109,183,1) 0%,rgba(3,184,228,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#066db7', endColorstr='#03b8e4',GradientType=1 ); /* IE6-9 */
+				box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.1);
+				transition: width 0.8s ease-in-out;
+			}
+
+			.cssProgress-label {
+				position: absolute;
+				overflow: visible;
+				left: 0;
+				right: 0;
+				color: rgba(0,0,0,.6);
+				font-size: .7em;
+				text-align: center;
+				background: #066db6;
+				border: 2px solid #d2d2d2;
+				border-radius: 100%;
+				width: 47px;
+				padding: 12px 0;
+				height: 47px;
+				font-size: 11px;
+				color: white;
+				font-weight: bold;
+				top: -18px;
+				margin: 0 auto;
+				vertical-align: middle;
+			}
+
+		}
+		.progress1 {
+			background-color: #e5e5e5;
+			height: 9px;
+			.cssProgress-bar {
+				height: 3px;
+				margin-top: 3px;
+			}
+
+			.cssProgress-label {
+				line-height: 18px;
+			}
+		}
+	}
+}	
+
+
+.eightspace-container{
+	width: 12.33%;
+	box-sizing: border-box;
+	display: block;
+	height: 190px;
+}

@@ -1,0 +1,319 @@
+.current-happenings-page{
+	background-image: url('../../assets/images/current-happenings-cover-img.jpg');
+}
+.current-happenings-main {
+	padding: 90px 0 100px;
+	.about-us-cont-title{
+		text-transform: uppercase;
+		text-align: left;
+		margin-bottom: 20px;
+		font-size: 36px;
+		font-weight: normal;
+		color: $color-primary;
+		font-family: $font-heading;
+		font-weight: 800;
+	}
+	.au-btm-btn-container {
+		position: relative;
+		margin-top: 20px;
+		float: left;
+		width: 100%;
+		height: 256px;
+		overflow: hidden;
+		img{
+			width: 100%;
+			object-fit: cover;
+			height: 100%;
+		}
+		a{
+			position:absolute;
+			bottom:0;
+			right: 0;
+		}
+	}
+	.sort-buttons{
+		margin: 30px 00px 00px 0;
+		.sort-button-up{
+			border: 1px solid $color-primary;
+			float: left;
+			height: 26px;
+			width: 26px;
+			text-align: center;
+			color:$color-primary;
+			font-size: 13px;
+			i{
+				margin: 3px 0 -9px;
+				float: left;
+				width: 100%;
+			}
+		}
+		.sort-button-down{
+			background:$color-primary;
+			border:1px solid $color-primary;
+			float: left;
+			height: 26px;
+			width: 26px;
+			text-align: center;
+			color:white;
+			font-size: 13px;
+			i{
+				margin: 3px 0 -9px;
+				float: left;
+				width: 100%;
+			}
+		}
+	}
+	.upcoming-events{
+		width: 100%;
+		float: left; 
+		.upcoming-event-inner {
+			border-bottom: 1px solid #e9e9e9;
+			.upcoming-event {
+				float: left;
+				width: 100%;
+				margin-bottom: 20px;
+
+				.ece-thumbnail {
+					position: relative;
+					float: left;
+					width: 197px;
+					height: 138px;
+					img {
+						vertical-align: middle;
+						border-style: none;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+
+					&:hover{
+						transition: all ease .2s;
+						.uce-date-overlay {
+							visibility: visible;
+							opacity: 1;
+							transition: all ease .2s;
+						}
+					}
+					.uce-date-overlay {
+						transition: all ease .2s;
+						visibility: hidden;
+						opacity: 0;
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						width: 100%;
+						height: 100%;
+						background: rgba(2,103,175,.91);
+						h6 {
+							color: #fff;
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+							text-align: center;
+							padding: 10px;
+							width: 100%;
+							font-size: 19px;
+							text-transform: uppercase;
+							font-weight: bold;
+						}
+					}
+				}
+				.uce-details{
+					h5 {
+						color: $color-primary;
+						text-transform: uppercase;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						font-weight: 700;
+						font-size: 24px;
+					}
+					.time-venue{
+						float: left;
+						width: 100%;
+						background: $color-primary;
+						padding: 5px 8px;
+						.tv-time, .tv-location {
+							width: 47%;
+							float: left;
+							display: inline-flex;
+							margin-right: 7px;
+
+							i{
+								font-size: 12px;
+								color: #fff;
+								float: left;
+								margin-right: 3px;
+								margin-top: 0px;
+							}
+							h6 {
+								font-size: 12px;
+								color: #fff;
+								font-weight: 700;
+								margin: 0;
+								width: auto;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								white-space: nowrap;
+								width: 100%;
+								float: left;
+							}
+						}
+					}
+					.text-paragraph {
+						font-size: 13px;
+						line-height: 1rem;
+						font-family: Open Sans,sans-serif;
+						margin-bottom: 3px;
+						color: #696969;
+						margin-top: 6px;
+						float: left;
+						width: 100%;
+					}
+					.btn-blue {
+						background-color: $color-primary;
+						color: #fff;
+						border: 1px solid $color-primary;
+						cursor: pointer;
+						text-transform: uppercase;
+						font-size: 11px;
+						padding: 1px 7px;
+						float: left;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+		
+	}
+
+	.news-portal{
+		width: 100%;
+		float: left; 
+		.news-portal-inner {
+			border-bottom: 1px solid #e9e9e9;
+			float: left;
+			width: 100%;
+			.ch-news {
+				float: left;
+				width: 100%;
+				margin-bottom: 20px;
+				position:relative;
+				.ch-news-inner{
+					img { 
+						width: 100%;
+						height: 147px;
+						object-fit: cover;
+					}
+					.ch-news-block{
+						opacity: 1;
+						float: left;
+						width: 100%;
+						display: block;
+						position: absolute;
+						height: 100%;
+						bottom: 0;
+						transition: all ease .2s;
+						.chn-title-desc {
+							background: rgba(0,150,180,.7);
+							float: left;
+							width: 100%;
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							right: 0;
+							z-index: 1;
+							padding: 20px 30px 0;
+							height: 44%;
+							transition: all ease .2s;
+							h5 {
+								transition: all ease .2s;
+								color: #fff;
+								border-bottom: 2px solid transparent;
+								padding-bottom: 10px;
+								width: auto;
+								float: left;
+							}
+							.date-comments{
+								height: 0;
+								overflow: hidden;
+								opacity: 0;
+								visibility: hidden;
+								transition: all ease .2s;
+							}
+						}
+
+						&:hover{
+							transition: all ease .2s;
+							opacity: 1 !important;
+							.chn-title-desc {
+								background: rgba(0,0,0,.6);
+								float: left;
+								width: 100%;
+								position: absolute;
+								
+								bottom: 0;
+								left: 0;
+								right: 0;
+								z-index: 1;
+								padding: 70px 30px 0px;
+								height: 100%;
+								h5 {
+									transition: all ease .2s;
+									color: #fff;
+									border-bottom: 2px solid #fff;
+									padding-bottom: 10px;
+									width: auto;
+									float: left;
+								}
+								.date-comments{
+									transition: all ease .2s;
+									height: auto;
+									overflow: visible;
+									opacity: 1;
+									visibility: visible;
+								}
+
+							}
+						}
+					}
+				}
+				
+			}
+			.date-comments{
+				float: left;
+				width: 100%;
+				.np-date, .np-comments {
+					
+					float: left;
+					display: inline-flex;
+					margin-right: 7px;
+
+					i{
+						font-size: 12px;
+						color: $color-primary;
+						float: left;
+						margin-right: 3px;
+						margin-top: 0px;
+					}
+					h6 {
+						font-size: 12px;
+						color: #fff;
+						font-weight: 700;
+						margin: 0;
+						width: auto;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						width: 100%;
+						float: left;
+					}
+				}
+			}
+		}
+		
+	}
+	
+}

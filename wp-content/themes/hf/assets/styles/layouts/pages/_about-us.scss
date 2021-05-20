@@ -1,0 +1,46 @@
+/*.about-us-page{
+	background-image: url('../../assets/images/about-us-cover-img.jpg');
+}*/
+
+.about-us-content {
+	padding: 90px 0 100px;
+	.about-us-cont-title{
+		text-transform: uppercase;
+		text-align: left;
+		margin-bottom: 20px;
+		font-size: 36px;
+		font-weight: normal;
+		color: $color-primary;
+		font-family: $font-heading;
+		font-weight: 800;
+	}
+	.au-btm-btn-container {
+		position: relative;
+		margin-top: 20px;
+		float: left;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.history-col, .mission-col, .team-col, .stories-col {
+
+		img{
+			width: 100%;
+			object-fit: cover;
+			min-height: 300px;
+			height: 300px;
+			object-position: center;
+			margin-bottom: 20px;
+			border: 1px solid #CCC;
+			padding: 1px;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+	}
+
+	.arrow-blue-btn {
+		font-size: 14px;
+	}
+
+}

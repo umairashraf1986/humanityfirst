@@ -1,0 +1,357 @@
+.single-hf_programs,.single-product {
+	.program-detail-page{
+		.iptc-content{
+			display: block;
+
+			div{
+				margin: 0 15px;
+			}
+		}
+	}
+	.page-wrapper {
+
+		.hero-container {
+
+			.hero-img-wrapper {
+			    margin-bottom: 10px;
+			    overflow: hidden;
+			    padding: 2px;
+			    border: 1px solid $color-gray;
+			    visibility: hidden;
+
+			    &.slick-initialized {
+			    	visibility: visible;
+			    }
+
+			    img {
+
+			    	&.hero-img {
+		    		    width: 100%;
+					    object-fit: cover;
+					    object-position: center;
+					    height: 300px;
+			    	}
+			    }
+			}
+
+			.stats-progress-bar{
+				z-index: 1;
+				position:relative;
+				float: left;
+				width: 100%;
+				margin-top: 20px;
+				.cssProgress {
+					width: 100%;
+					margin-bottom: 20px;
+
+					.progress1 {
+						position: relative;
+						overflow: visible;
+						width: 100%;
+						font-family: "Roboto", sans-serif;
+					}
+
+					.cssProgress-bar {
+						display: block;
+						float: left;
+						width: 0%;
+						height: 100%;
+						background: rgb(6,109,183); /* Old browsers */
+						background: -moz-linear-gradient(left,  rgba(6,109,183,1) 0%, rgba(3,184,228,1) 100%); /* FF3.6-15 */
+						background: -webkit-linear-gradient(left,  rgba(6,109,183,1) 0%,rgba(3,184,228,1) 100%); /* Chrome10-25,Safari5.1-6 */
+						background: linear-gradient(to right,  rgba(6,109,183,1) 0%,rgba(3,184,228,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#066db7', endColorstr='#03b8e4',GradientType=1 ); /* IE6-9 */
+						box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.1);
+						transition: width 0.8s ease-in-out;
+					}
+
+					.cssProgress-label {
+						position: absolute;
+						overflow: visible;
+						left: 0;
+						right: 0;
+						color: rgba(0,0,0,.6);
+						font-size: .7em;
+						text-align: center;
+						background: #066db6;
+						border: 2px solid #d2d2d2;
+						border-radius: 100%;
+						width: 47px;
+						padding: 12px 0;
+						height: 47px;
+						font-size: 11px;
+						color: white;
+						font-weight: bold;
+						top: -18px;
+						margin: 0 auto;
+						vertical-align: middle;
+					}
+				}
+				.progress1 {
+					background-color: #e5e5e5;
+					height: 9px;
+					.cssProgress-bar {
+						height: 3px;
+						margin-top: 3px;
+						max-width: 100%;
+					}
+					.cssProgress-label {
+						line-height: 18px;
+					}
+				}
+			}
+			.owpb-bottom-stats{
+				position: relative;
+				float: left;
+				height: 19px;
+				width: 100%;
+				.raised-fund {
+					width: 50%;
+					float: left;
+					position:absolute;
+					left:0;
+					top: -6px;
+					h6 {
+						color: #333;
+						font-weight: 700;
+						text-align: left;
+						font-size: 11px;
+						text-transform: capitalize;
+						width: 100%;
+						padding: 7px 0px 16px;
+						border-right: 0 solid #d4d4d4;
+						top: -10px;
+						position: relative;
+						z-index: 0;
+						margin-bottom: 0;
+						span{
+							color:#066db6;
+						}
+					}
+				}
+				.goal-fund {
+					width: 50%;
+					float: left;
+					position:absolute;
+					right:0;
+					top: -6px;
+					h6 {
+						color: #333;
+						font-weight: 700;
+						text-align: right;
+						font-size: 11px;
+						text-transform: capitalize;
+						width: 100%;
+						padding: 7px 0px 16px;
+						border-right: 0 solid #d4d4d4;
+						top: -10px;
+						position: relative;
+						z-index: 0;
+						margin-bottom: 0;
+						span{
+							color:#066db6;
+						}
+					}
+				}
+			}
+
+		    ul {
+
+		    	&.hero-menu {
+				    padding: 10px;
+				    text-align: center;
+
+				    li {
+					    display: inline-block;
+
+					    a {
+					    	display: inline-block;
+
+					    	&.btn-hero-menu {
+								color: $color-primary;
+							    background-color: transparent;
+							    border: 1px solid $color-primary;
+							    font-weight: normal;
+							    transition: all 0.2s ease-in;
+
+							    &:hover {
+							    	color: $color-white;
+							    	background-color: $color-primary;
+							    }
+					    	}
+					    }
+					}
+		    	}
+		    }
+		}
+
+		.img-wrapper {
+		    display: flex;
+	        margin-bottom: 10px;
+
+			.director-img-wrapper {
+			    width: 206px;
+			    height: 206px;
+			    border-radius: 50%;
+			    overflow: hidden;
+			    display: flex;
+			    border: 1px solid #ccc;
+			    align-items: center;
+			    justify-content: center;
+
+			    img {
+			    	object-fit: cover;
+		    		object-position: center;
+	    		    width: 200px;
+				    height: 200px;
+				    border-radius: 50%;
+			    }
+			}
+		}
+
+		.widget {
+
+			.disk-list{
+				padding:0;
+				margin-right: 0;
+				li{
+					list-style: none;
+					float: left;
+					width: 100%;
+					&:before {
+						content: "\f111";
+						font-family: FontAwesome;
+						color: #0267ae;
+						margin-right: 10px;
+						font-size: 10px;
+						line-height: 0;
+						margin-top: 15px;
+						float: left;
+					}
+					a{
+					
+						padding: 7px 0 !important;
+						font-size: 11px;
+						color: #494949;
+						font-weight: 700;
+						text-transform: uppercase;
+						float: left;
+						max-width: calc(100% - 25px);
+						&:hover{
+							color: $color-primary;
+						}
+					}
+				}
+			}
+		}
+
+		.projects-heading {
+		    font-size: 18px;
+		    margin: 70px 0 30px 0;
+		    padding-bottom: 10px;
+		    position: relative;
+		    text-transform: uppercase;
+
+		    &:after {
+	    	    position: absolute;
+			    bottom: 0;
+			    left: 0;
+			    content: "";
+			    height: 2px;
+			    width: 70px;
+			    background: $color-primary;
+		    }
+		}
+
+		.ow-projects-inside-program-slider {
+
+			&>.slick-list {
+				&>.slick-track {
+					margin-left: 0;
+				}
+			}
+			.owp-block {
+				width: 100%;
+				margin-right: 20px;
+				padding: 0 10px;
+
+				.owp-block-inner{
+					border: 1px solid #eeeeee;
+					overflow: hidden;
+					width: 100%;
+					min-height: 413px;
+
+					.owp-block-image{
+						img {
+							height: 200px;
+							object-fit: cover;
+							width: 100%;
+						}
+					}
+					.tumblr-post-image{
+						img{
+							object-fit: contain;
+						}
+					}
+					.owp-block-title {
+						h4 {
+							font-size: 20px;
+							text-align: center;
+							padding: 20px 10px 10px 10px;
+							position: relative;
+							color: #066db6;
+							&::after{
+								background:#d2d2d2;
+								height: 2px;
+								width:65px;
+								content:"";
+								position:absolute;
+								margin: 0 auto;
+								left: 0;
+								right: 0;
+								bottom:-4px;
+							}
+						}
+					}
+					.owp-block-desc{
+
+						color:#696969;
+						font-size: 11px;
+						text-align: center;
+						padding: 0px 20px 20px;
+
+						p {
+							text-align: justify;
+						}
+
+					}
+				}
+			}
+
+			.team-arrow {
+			    position: absolute;
+			    top: 50%;
+			    display: inline-block;
+			    background: rgba($color-primary, .5);
+			    height: 50px;
+			    width: 50px;
+			    text-align: center;
+			    cursor: pointer;
+			    line-height: 50px;
+			    font-size: 24px;
+			    color: #FFF;
+			    border: 2px solid $color-primary;
+			    margin-top: -25px;
+			    z-index: 50;
+
+			    &.team-prev-arrow {
+			    	left: -30px !important;
+			    }
+
+			    &.team-next-arrow {
+			    	right: -30px !important;
+			    }
+			}
+		}
+	}
+}

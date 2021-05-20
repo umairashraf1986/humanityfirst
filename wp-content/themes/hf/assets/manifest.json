@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "../bower_components/jqueryui-datepicker/datepicker.js",
+        "../node_modules/jquery-validation/dist/jquery.validate.min.js",
+        "../node_modules/jquery-validation/dist/additional-methods.js",
+        "../assets/scripts/jquery.mCustomScrollbar.concat.min.js",
+        "./scripts/isotope.pkgd.min.js",
+        "./scripts/apexcharts.min.js",
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "../bower_components/jqueryui-datepicker/datepicker.css",
+        "../assets/styles/components/jquery.mCustomScrollbar.min.css",
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    }
+  },
+  "config": {
+    "devUrl": "http://127.0.0.1/wpHF"
+  }
+}
